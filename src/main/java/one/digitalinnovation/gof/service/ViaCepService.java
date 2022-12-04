@@ -15,9 +15,10 @@ import one.digitalinnovation.gof.model.Endereco;
  * 
  * @author falvojr
  */
-@FeignClient(name = "viacep", url = "https://viacep.com.br/ws")
+@FeignClient(name = "viacep", url = "https://viacep.com.br/ws")// url informada no site do viacep e os endpoints tbm
 public interface ViaCepService {
 
-	@GetMapping("/{cep}/json/")
-	Endereco consultarCep(@PathVariable("cep") String cep);
-}
+	@GetMapping("/{cep}/json/")//poderia ter sido o RequestMapping que tbm funcionaria
+	Endereco consultarCep(@PathVariable("cep") String cep); // esse json vai ser convertido no objeto endereço
+}// devolve o endereço populado com base no cep que eu passar
+// o Feign usa as annotations do próprio Spring

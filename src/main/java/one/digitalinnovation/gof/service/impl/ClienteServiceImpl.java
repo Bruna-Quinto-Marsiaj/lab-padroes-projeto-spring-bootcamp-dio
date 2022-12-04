@@ -20,7 +20,7 @@ import one.digitalinnovation.gof.service.ViaCepService;
  * @author falvojr
  */
 @Service
-public class ClienteServiceImpl implements ClienteService {
+public class ClienteServiceImpl implements ClienteService {//coração do sistema
 
 	// Singleton: Injetar os componentes do Spring com @Autowired.
 	@Autowired

@@ -9,8 +9,8 @@ import one.digitalinnovation.gof.model.Cliente;
  * 
  * @author falvojr
  */
-public interface ClienteService {
-
+public interface ClienteService { //service: camada de negócio, onde vamos criar as regras, implementar toda necessidade de integração, composição que geralmente é responsabilidade da facade
+//interface que representa uma strategy e tem todas as opereações de CRUD, para poder criar uma implementação, uma opção concreta da estratégia de implementação
 	Iterable<Cliente> buscarTodos();
 
 	Cliente buscarPorId(Long id);
