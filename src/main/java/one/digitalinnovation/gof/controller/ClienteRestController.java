@@ -24,8 +24,8 @@ import one.digitalinnovation.gof.service.ClienteService;
 @RestController
 @RequestMapping("clientes")
 public class ClienteRestController { // aqui tem todas as operações básicas
-
-	@Autowired
+// será o primeiro componete a ser acionado, pq é ele quem expõe os endpoints, interface de consumo
+	@Autowired//provê recursos e componentes do spring como singleton. Só de botar o autowired aqui eu passo o controle, conceito de inversão de controle, deixo de ter que instanciar, dar new, algumas coisas e passo essa responsabilidade pro framework
 	private ClienteService clienteService;
 
 	@GetMapping

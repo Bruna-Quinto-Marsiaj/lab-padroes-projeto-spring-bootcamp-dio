@@ -37,7 +37,7 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
-		<!-- OpenAPI/Swagger (adicionado manualmente) -->
+		<!-- OpenAPI/Swagger (adicionado manualmente) interface mais amigável pra consumir os endpoints da pra personalizar, dizer o que cada endpoint faz, o que cada atributo faz, qual é obrigatório ou não e deixar a implementação como openapi que é o sucessor do swagger  -->
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-ui</artifactId>
